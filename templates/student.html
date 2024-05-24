@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" method="post" enctype='multipart/form-data'>
+        {% csrf_token %}
+        <h1>First name </h1>
+                {{ student.first_name }}
+        
+        <h1>Age</h1>
+                {{ student.age }}
+        <h1>Last name</h1>
+                {{ student.last_name }}
+            <h2>Photo</h2>
+                    {{ student.image }}
+        <h2>video</h2>
+                    {{ student.video }}
+        
+        <br>
+                {{ error }}
+        <br>
+        <input type = "submit" value = "Submit">
+        
+        </form>
+        
+</body>
+</html>
